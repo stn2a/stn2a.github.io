@@ -1863,22 +1863,22 @@
                     <ol style="padding-left: 20px;">
                         <li style="margin-bottom: 1.5rem;">
                             <strong>搜索可用网络</strong><br>
-                            在设备的WiFi设置中，搜索SSID为 <span style="background: #f1f5f9; border: 1px solid #d1d5db; border-radius: 8px; padding: 0.2rem 0.5rem; font-family: monospace;">Portal_WiFi</span> 或 <span style="background: #f1f5f9; border: 1px solid #d1d5db; border-radius: 8px; padding: 0.2rem 0.5rem; font-family: monospace;">Portal_WiFi_5G</span> 的无线网络
+                            在设备的WiFi设置中，搜索SSID为 <span style="background: #f1f5f9; border: 1px solid #d1d5db; border-radius: 8px; padding: 0.2rem 0.5rem; font-family: monospace;">OP-2.4G</span> 或 <span style="background: #f1f5f9; border: 1px solid #d1d5db; border-radius: 8px; padding: 0.2rem 0.5rem; font-family: monospace;">OP-5G</span> 的无线网络
                         </li>
                         <li>
                             <strong>输入密码</strong><br>
-                            密码：<span style="background: #f1f5f9; border: 1px solid #d1d5db; border-radius: 8px; padding: 0.2rem 0.5rem; font-family: monospace;">无密码</span>
+                            密码：<span style="background: #f1f5f9; border: 1px solid #d1d5db; border-radius: 8px; padding: 0.2rem 0.5rem; font-family: monospace;">12345678+空格</span>
                             <div style="display: flex; align-items: flex-start; gap: 0.75rem; background: #eff6ff; border: 1px solid #3b82f6; border-radius: 8px; padding: 1rem; margin: 1.5rem 0;">
                                 <i class="fas fa-info-circle" style="color: #3b82f6; margin-top: 0.25rem;"></i>
-                                <div style="color: #1e40af;">如果3分钟内未认证将被踢出网络，请重新连接并认证</div>
+                                <div style="color: #1e40af;">无法连接请联系管理员</div>
                             </div>
                         </li>
                     </ol>
                 </section>
 
                 <section class="content-section" id="section-authentication" style="display: none;">
-                    <h2><i class="fas fa-lock"></i> 认证登录</h2>
-                    <h3>输入手机号或者账号密码</h3>
+                    <h2><i class="fas fa-lock"></i> WiFi使用</h2>
+                    <h3>连接后即可使用</h3>
                     <div style="display: flex; align-items: flex-start; gap: 0.75rem; background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 1rem; margin: 1.5rem 0;">
                         <i class="fas fa-exclamation-triangle" style="color: #f59e0b; margin-top: 0.25rem;"></i>
                         <div style="color: #854d0e;">正确并且套餐无过期情况可正常使用</div>
@@ -1993,7 +1993,7 @@
                     <img src="https://raw.githubusercontent.com/stnstudio/stnstudio.github.io/main/xy.png" alt="STN公开协议文档" style="width: 100%; height: 100%; object-fit: contain; display: block;">
                 </div>
                 <p style="text-align: center; color: var(--text-light); margin-top: 1rem;">
-                    协议版本：v3 | 最后更新：2025-12-19
+                    协议版本：v4 | 最后更新：2026-3-4
                 </p>
             </div>
         </section>
@@ -2510,7 +2510,7 @@
             const volumeCancelBtn = document.getElementById('volumeCancelBtn');
             
             let isPlaying = false;
-            let userVolume = 0.2; // 默认音量20%
+            let userVolume = 0.5; // 默认音量50%
             let availableTracks = []; // 存储实际存在的音轨
             let currentTrackIndex = 0;
 
